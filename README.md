@@ -5,11 +5,11 @@ This project includes the simulation of two stage Operational Amplifier
 design and postlayout simulation of different parameters of the Op-Amp.
 
 # Contents
-- [Overview of LV Op-Amp IP](##Overview-of-LV-Op-Amp-IP)
-- [Block Diagram of Low Power Operational Amplifer IP](##Block-Diagram-of-Low-Power-Operational-Amplifer-IP)
-- [Circuit Diagram of Low Power Operational Amplifer IP](##Circuit-Diagram-of-Low-Power-Operational-Amplifer-IP)
-- [Specifications](##Specifications)
-- [Performance Parameters](##Performance-Parameters)
+- [Overview of LV Op-Amp IP](#Overview-of-LV-Op-Amp-IP)
+- [Block Diagram of Low Power Operational Amplifer IP](#Block-Diagram-of-Low-Power-Operational-Amplifer-IP)
+- [Circuit Diagram of Low Power Operational Amplifer IP](#Circuit-Diagram-of-Low-Power-Operational-Amplifer-IP)
+- [Specifications](#Specifications)
+- [Performance Parameters](#Performance-Parameters)
 - [Open Source Tools Used](#Open-Source-Tools-Used)
 - [Installation in Ubuntu](#Installation-in-Ubuntu)
     - [eSim Installation](#eSim-Installation)
