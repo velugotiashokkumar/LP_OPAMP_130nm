@@ -206,4 +206,151 @@ Note: In windows there is no need to install ngspice and sky130nm PDK saperately
 
 ## Pre Layout Schematic and Simulations
 
-### 
+Create the schematic of your circuit withh mos transistors and extract the netlist file and by using kicad to ngspice converter in eSim convert the spice file into ngspice file and follow the below steps.
+
+- Step1. Please download sky130 from this link and unzip : https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip
+- Step2. Save the .cir.out file in the sky_fd_pr folder as .cir file.
+- Step3. Open with notepad and add the path .lib "models/sky130.lib.spice" tt  at the top.
+- Step4. Replace with CMOSP, mos_p with sky130_fd_pr__pfet_01v8 and CMOSN, mos_n with  sky130_fd_pr__nfet_01v8.
+- Step5. To replace an inductor, capacitor, or resistor do it this way for example: L1 out gnd 1m by x1  out gnd mid 0 sky130_fd_pr__ind_03_90.
+- Note: For more details go to the cells folder in sky_fd_pr. Open the specific component folder which you want to use. Then open the test folder and check the SPICE file. The SPICE file is an example of implementation of
+ that component. You will get to know how to use the component in your ckt.
+- Step6. Now Run the ckt with ngspice
+
+### To Run the ckt using ngspice:
+- Step1. Right click on the .cir file.
+- Step2. Click on Open With
+- Step3. Browse for the ngspice.
+- Step4. If ngspice is not present scroll down click on More Apps.
+- Steps5. Go to the FOSSEE folder search for Ngspice. Run it.
+
+## Differential Mode Gain
+Run the following commands in ngspice run command window after setting the location of the .cir file.
+```
+source differential_mode_gain.cir
+```
+
+![Differential_Mode Gain Magnitude in dB](Pre_Layout/pre_loayout_plots/differential_mode_gain/differential_mode_gain_db.png)
+
+![Differential Mode_Gain Phase in degrees](Pre_Layout/pre_loayout_plots/differential_mode_gain/differential_mode_gain_phase.png)
+
+
+## Common Mode Gain
+Run the following commands in ngspice run command window after setting the location of the .cir file.
+```
+source common_mode_gain.cir
+```
+
+![Common_Mode Gain Magnitude in dB](Pre_Layout/pre_loayout_plots/common_mode_gain/common_mode_gain.png)
+
+![Common_Mode Gain Phase in degrees](Pre_Layout/pre_loayout_plots/common_mode_gain/common_mode_phase.png)
+
+## Offset Voltage
+Run the following commands in ngspice run command window after setting the location of the .cir file.
+```
+source offset_voltage.cir
+```
+
+![Common_Mode Gain Magnitude in dB](Pre_Layout/pre_loayout_plots/offset_voltage/offset_voltage.png)
+
+## Input Noise Spectrum
+Run the following commands in ngspice run command window after setting the location of the .cir file.
+```
+source input_noise_spectrum
+```	
+To obtain Noise Spectrum 
+- Please run the following commands in the ngspice window for obtaining the plot
+
+
+- Use `setplot` to see all plots available
+
+    ```
+    ngspice-> setplot
+    ```
+
+- select the plot which has "Noise Spectral Density Curves".For example,
+    ```
+    ngspice-> setplot noise1
+    ```
+- Then plot the graph using the command
+    ```
+    ngspice-> plot inoise_spectrum
+    ```
+
+![Input Noise Spectrum](Pre_Layout/pre_loayout_plots/Input_noise_spectrum/input_noise_spectrum.png)
+
+## Power Dissipation
+```
+source power_dissipation.cir
+```
+
+![Power Dissipation for 1kOhm load with 2V p-p sine input](Pre_Layout/pre_loayout_plots/power_dissipation/power_density.png)
+
+
+## Slew Rate
+```
+source slew_rate.cir
+```
+
+![Slew Rate](Pre_Layout/pre_loayout_plots/slew_rate/slew_rate_output.png)
+
+A much easier plot to see slew rate could be obtained by changing the analysis as
+```
+.tran 0.01u 2u
+```
+![Slew Rate](Pre_Layout/pre_loayout_plots/slew_rate/elobrated_slew_rate.png)
+
+
+## Transient Analysis
+```
+source transient_analysis.cir
+```
+
+![Transient Analysis](Pre_Layout/pre_loayout_plots/transient_analysis/transient_analysis.png)
+
+## Temp V/S Differential Mode Gain (Temp : -40&deg - 200&deg)
+```
+source temp_differential_mode_gain.cir
+```
+![Temp_Differential_mode_gain](Pre_Layout/pre_loayout_plots/temp_differential_mode_gain/temp_differential_mode_gain_gain.png)
+
+![Temp_Differential_mode_gain_output](Pre_Layout/pre_loayout_plots/temp_differential_mode_gain/temp_differential_mode_gain_output.png)
+
+
+## Temp V/S Common Mode Gain (Temp : -40&deg - 200&deg)
+```
+source temp_common_mode_gain.cir
+```
+![Temp_Common_mode_gain](Pre_Layout/pre_loayout_plots/temp_common_mode_gain/temp_common_gain.png)
+
+![Temp_Common_mode_gain_output](Pre_Layout/pre_loayout_plots/temp_common_mode_gain/temp_common_output.png)
+
+
+## Temp V/S Offset Voltage (Temp : -40&deg - 200&deg)
+```
+source temp_offset_voltage.cir
+```
+![Temp_Offset_voltage](Pre_Layout/pre_loayout_plots/temp_offset_volatge/temp_offset_voltage.png)
+
+<blockquote>
+Note: 
+<ul>
+    <li>For performing any of the simulation mentioned in this repository the <b>sky130_fd_pr</b> folder is necessary.
+    <li>All simulation given in this repository are properly linked to the <b>sky130_fd_pr</b> library. Hence files execute with no error if the <i> folders are kept as such</i>
+    <li>For any external simulation using SkyWater Models, it is a must to properly include the library
+</ul>
+</blockquote>
+
+
+## Contributors 
+
+- **Velugoti Ashok kumar**
+
+## Acknowledgments
+
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+
+## Contact Information
+
+- Velugoti Ashok kumar, Student, JNTU-GV CEV ashokkumarvelugoti@gmail.com
