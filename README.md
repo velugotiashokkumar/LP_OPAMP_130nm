@@ -35,14 +35,14 @@ The first stage of an op-amp contributed high gain while the second stage contri
 ## Block Diagram of Low Power Operational Amplifer IP
 
  <p align="center">
- <img width="800" height="500" src="/Images/N/block.png">
+ <img width="800" height="500" src="/Images/block_diagram.png">
  </p>
 
 
 ## Circuit Diagram of Low Power Operational Amplifer IP
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/circuit.png">
+  <img width="800" height="500" src="/Images/schematic_circuit.png">
  </p>
 
 
@@ -55,33 +55,29 @@ The first stage of an op-amp contributed high gain while the second stage contri
 </tr>
 <tr>
     <td>Differential Gain</td>
-    <td>31.55dB</td>
+    <td>72dB</td>
 </tr>
 <tr>
     <td>CMRR</td>
-    <td>41.4dB</td>
+    <td>10dB</td>
 </tr>
 <tr>
     <td>Gain Bandwidth Product</td>
-    <td>46MHz</td>
+    <td>850MHz</td>
 </tr>
 <tr>
     <td>Phase Margin</td>
-    <td>101.93&deg;</td>
-</tr>
-<tr>
-    <td>Input Offset Voltage</td>
-    <td>-24.55mV</td>
+    <td>72&deg;</td>
 </tr>
 <tr>
     <td>Power Dissipation at <br/>
-    60Hz 1mV p-p sinusoid <br/>
+    10kHz 1mV p-p sinusoid <br/>
     with 1k&Omega;</td>
-    <td>17&micro;W</td>
+    <td>24 fW</td>
 </tr>
 <tr>
     <td>Slew Rate</td>
-    <td>180 V/&micro;s</td>
+    <td>40 V/ns</td>
 </tr>
 </table>
 
@@ -205,3 +201,9 @@ In terminal, execute the following commands
 Please refer to the following links for proper installation of *eSim*
 - https://static.fossee.in/esim/installation-files/Install_eSim_on_Windows.pdf
 - https://static.fossee.in/esim/installation-files/eSim-2.3_installer.exe
+
+Note: In windows there is no need to install ngspice and sky130nm PDK saperately. They will be installed when you install eSim directely.
+
+## Pre Layout Schematic and Simulations
+
+### 
