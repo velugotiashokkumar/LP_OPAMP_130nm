@@ -54,6 +54,10 @@ The first stage of an op-amp contributed high gain while the second stage contri
     <th>Value</th>
 </tr>
 <tr>
+    <td>Supply Voltage (VDD)</td>
+    <td>1.8V</td>
+</tr>
+<tr>
     <td>Differential Gain</td>
     <td>72dB</td>
 </tr>
@@ -87,7 +91,8 @@ The first stage of an op-amp contributed high gain while the second stage contri
 | Parameter | Description | Min | Type | Max | Unit | Condition |
 | :---:  | :-: | :-: | :-: | :---:  | :-: | :-: |
 | Technology | 0.18 um CMOS Process | | | | | |
-| VDD | Supply Voltage | 1.6 | 1.8 | 2.0 | V | T=-40C to 200C |
+| VDD | Supply Voltage | 0.6 (6.6db) | 1.8 (72db) | 19 (7.2db) | V | T= 27C |
+| Differential Gain |  | 6.6 | 72 | 7.2 | db | T= 27C and for above Supply Volatges VDD |
 | CMRR | Common Mode Rejection Ratio | 1790 | 1750 | 1690 | - | T=-40C to 200C |
 | V-offset | Output Offset Voltage | -1.77 | -0.85 | -0.38 | V | T=-40C to 200C |
 
