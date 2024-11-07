@@ -42,7 +42,7 @@ The first stage of an op-amp contributed high gain while the second stage contri
 ## Circuit Diagram of Low Power Operational Amplifer IP
 
  <p align="center">
-  <img width="800" height="500" src="/Images/schematic_circuit.png">
+  <img width="800" height="500" src="/Images/Schematic_circuit.png">
  </p>
 
 
