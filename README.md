@@ -277,7 +277,7 @@ source slew_rate.cir
 
 A much easier plot to see slew rate could be obtained by changing the analysis as
 ```
-.tran 0.01u 2u
+.tran 0.5f 10ns
 ```
 ![Slew Rate](Pre_Layout/pre_loayout_plots/slew_rate/elobrated_slew_rate.png)
 
@@ -289,7 +289,7 @@ source transient_analysis.cir
 
 ![Transient Analysis](Pre_Layout/pre_loayout_plots/transient_analysis/transient_analysis.png)
 
-## Temp V/S Differential Mode Gain (Temp : -40&deg - 200&deg)
+## Temp V/S Differential Mode Gain (Temp : -40C - 200C)
 ```
 source temp_differential_mode_gain.cir
 ```
@@ -298,7 +298,7 @@ source temp_differential_mode_gain.cir
 ![Temp_Differential_mode_gain_output](Pre_Layout/pre_loayout_plots/temp_differential_mode_gain/temp_differential_mode_gain_output.png)
 
 
-## Temp V/S Common Mode Gain (Temp : -40&deg - 200&deg)
+## Temp V/S Common Mode Gain (Temp : -40C - 200C)
 ```
 source temp_common_mode_gain.cir
 ```
@@ -307,7 +307,7 @@ source temp_common_mode_gain.cir
 ![Temp_Common_mode_gain_output](Pre_Layout/pre_loayout_plots/temp_common_mode_gain/temp_common_output.png)
 
 
-## Temp V/S Offset Voltage (Temp : -40&deg - 200&deg)
+## Temp V/S Offset Voltage (Temp : -40C - 200C)
 ```
 source temp_offset_voltage.cir
 ```
