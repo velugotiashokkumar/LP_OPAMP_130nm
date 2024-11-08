@@ -34,7 +34,7 @@ The first stage of an op-amp contributed high gain while the second stage contri
 ## Block Diagram of Low Power Operational Amplifer IP
 
  <p align="center">
- <img width="800" height="500" src="/Images/block_diagram.png">
+ <img width="800" height="300" src="/Images/block_diagram.png">
  </p>
 
 
