@@ -237,7 +237,7 @@ source offset_voltage.cir
 ## Input Noise Spectrum
 Run the following commands in ngspice run command window after setting the location of the .cir file.
 ```
-source input_noise_spectrum
+source input_noise_spectrum.cir
 ```	
 To obtain Noise Spectrum 
 - Please run the following commands in the ngspice window for obtaining the plot
@@ -265,8 +265,13 @@ To obtain Noise Spectrum
 source power_dissipation.cir
 ```
 
-![Power Dissipation for 1kOhm load with 2V p-p sine input](Pre_Layout/pre_loayout_plots/power_dissipation/power_density.png)
-
+![Power Dissipation for 1kOhm load with 2mV p-p sine input](Pre_Layout/pre_loayout_plots/power_dissipation/power_density.png)
+<blockquote>
+Note: 
+<ul>
+    <li>The above simulation is done for 1Kohm load with 2mV p-p sine input
+</ul>
+</blockquote>
 
 ## Slew Rate
 ```
@@ -283,11 +288,17 @@ A much easier plot to see slew rate could be obtained by changing the analysis a
 
 
 ## Transient Analysis
+The Transient Anlysis when the inputs are vin1=sine(0 1m 60) and vin2=sine(0 -1m 60).
+
 ```
 source transient_analysis.cir
 ```
 
 ![Transient Analysis](Pre_Layout/pre_loayout_plots/transient_analysis/transient_analysis.png)
+
+The Transient Analysis when the inputs are vin1=sine(0 5m 60) and vin2=0V
+
+![Transient Analysis](Pre_Layout/pre_loayout_plots/transient_analysis/transient_analysis2.png)
 
 ## Temp V/S Differential Mode Gain (Temp : -40C - 200C)
 ```
