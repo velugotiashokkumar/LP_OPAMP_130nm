@@ -331,10 +331,11 @@ Note:
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 - Sumanto kar, Assistant Project Manager, FOSSEE
-- Dr.K.Babulu 
+- Dr.K.Babulu, Professor, Department of ECE, UCEV, JNTUK, DWARAPUDI Post, VIZIANAGARAM, A.P, 53500 
 
 ## Contact Information
 
 - Velugoti Ashok kumar, Student, JNTU-GV CEV ashokkumarvelugoti@gmail.com
+- Dr.K.Babulu, Professor, Department of ECE, UCEV, JNTUK kapbbl.ece@jntugvcev.edu.in
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
 - Sumanto kar, Assistant Project Manager, FOSSEE
