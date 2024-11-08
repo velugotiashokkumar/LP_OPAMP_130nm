@@ -329,9 +329,12 @@ Note:
 
 ## Acknowledgments
 
-
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Sumanto kar, Assistant Project Manager, FOSSEE
+- Dr.K.Babulu 
 
 ## Contact Information
 
 - Velugoti Ashok kumar, Student, JNTU-GV CEV ashokkumarvelugoti@gmail.com
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+- Sumanto kar, Assistant Project Manager, FOSSEE
