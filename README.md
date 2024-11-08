@@ -19,9 +19,9 @@ design and postlayout simulation of different parameters of the Op-Amp.
 - [Installation in Windows](#Installation-in-Windows)
     - [eSim Installation](#eSim-Installation)
 - [Pre Layout Schematic and Simulations](#Pre-Layout-Schematic-and-Simulations)
-- [Future Work](#Future-Work)
-- [Author](#Author)
-- [Acknowledgements](#Acknowledgements)
+- [Contributors](#Contributors)
+- [Acknowledgmentsg](#Acknowledgments)
+- [Contact Information](#Contact_Information)
 
 
 ## Overview of LV Op-Amp IP
