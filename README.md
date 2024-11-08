@@ -15,7 +15,6 @@ design and postlayout simulation of different parameters of the Op-Amp.
     - [eSim Installation](#eSim-Installation)
     - [Ngspice Installation](#Ngspice-Installation)
     - [SkyWater PDK Installation](#SkyWater-PDK-Installation)
-    - [Magic Installation](#Magic-Installation)
 - [Installation in Windows](#Installation-in-Windows)
     - [eSim Installation](#eSim-Installation)
 - [Pre Layout Schematic and Simulations](#Pre-Layout-Schematic-and-Simulations)
@@ -170,29 +169,6 @@ In terminal, execute the following commands
     $ ./configure --enable-sky130-pdk
 
     $ make
-
-    $ sudo make install
-    ```
-
-## Magic Installation
-In terminal, execute the following commands
-
-- To download the repository into the current working directory
-    ```
-    $ git clone git://opencircuitdesign.com/magic
-    ```
-
-- Go to `magic` directory
-
-    ```
-    $ cd magic
-    ```
-
-- Configure and install
-    ```
-    $ sudo ./configure
-
-    $ sudo make
 
     $ sudo make install
     ```
